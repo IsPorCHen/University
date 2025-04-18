@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddUniversity"
+    android:background="#FF1E1E1E"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header with back button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="#FFFF6D00"
+            android:onClick="back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/addData"
+            android:textColor="#FFFF6D00"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Input fields -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <!-- University name input -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nameuniv"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="16sp"
+                android:hint="Введите название университета"
+                android:layout_marginBottom="16dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#FFFFFFFF"
+                android:textColorHint="#80FFFFFF"
+                android:background="@drawable/mangalib_edittext_background"/>
+
+            <!-- Website input -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/website"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/web"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="16sp"
+                android:hint="Введите веб-сайт"
+                android:layout_marginBottom="16dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#FFFFFFFF"
+                android:textColorHint="#80FFFFFF"
+                android:inputType="textWebEditText"
+                android:background="@drawable/mangalib_edittext_background"/>
+
+            <!-- Photo URL input -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/url"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/urlphoto"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="16sp"
+                android:hint="Введите URL фотографии"
+                android:layout_marginBottom="24dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#FFFFFFFF"
+                android:textColorHint="#80FFFFFF"
+                android:inputType="textUri"
+                android:background="@drawable/mangalib_edittext_background"/>
+
+            <!-- Add button -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/adduniv"
+                android:textAllCaps="false"
+                style="@style/MangalibButton"
+                android:onClick="adduniv"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

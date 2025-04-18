@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTeacher"
+    android:background="#FF1E1E1E"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header with back button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="#FFFF6D00"
+            android:onClick="back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/addData"
+            android:textColor="#FFFF6D00"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Input fields -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Name input -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fio"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="16sp"
+                android:hint="Введите ФИО преподавателя"
+                android:layout_marginBottom="16dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#FFFFFFFF"
+                android:textColorHint="#80FFFFFF"
+                android:background="@drawable/mangalib_edittext_background"/>
+
+            <!-- Group spinner -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Кафедра/Отдел"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/mangalib_edittext_background"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Speciality input -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/speciality"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/speciality"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="16sp"
+                android:hint="Введите специальность"
+                android:layout_marginBottom="16dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#FFFFFFFF"
+                android:textColorHint="#80FFFFFF"
+                android:background="@drawable/mangalib_edittext_background"/>
+
+            <!-- Salary input -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/salary"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/salary"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="16sp"
+                android:hint="Введите зарплату"
+                android:layout_marginBottom="16dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#FFFFFFFF"
+                android:textColorHint="#80FFFFFF"
+                android:inputType="numberDecimal"
+                android:background="@drawable/mangalib_edittext_background"/>
+
+            <!-- Hours input -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hours"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/hours"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="16sp"
+                android:hint="Введите часы работы"
+                android:layout_marginBottom="24dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#FFFFFFFF"
+                android:textColorHint="#80FFFFFF"
+                android:inputType="number"
+                android:background="@drawable/mangalib_edittext_background"/>
+
+            <!-- Add button -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/addteacher"
+                android:textAllCaps="false"
+                style="@style/MangalibButton"
+                android:onClick="addteacher"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

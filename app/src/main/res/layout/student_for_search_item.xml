@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/orange_border"
+    android:padding="16dp">
+
+        <TextView
+            android:id="@+id/info1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:textColor="#FFFFFFFF"
+            android:text="ФИО Студента"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/info2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:textColor="#FFFFFFFF"
+            android:text="@string/univer" />
+
+        <TextView
+            android:id="@+id/info3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:textColor="#FFFFFFFF"
+            android:text="@string/specialty" />
+
+        <TextView
+            android:id="@+id/info4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:textColor="#FFFFFFFF"
+            android:text="Дата рождения" />
+
+        <TextView
+            android:id="@+id/info5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:textColor="#FFFFFFFF"
+            android:text="Бюджет" />
+
+</LinearLayout>

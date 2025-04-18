@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu"
+    android:orientation="vertical"
+    android:background="#FF1E1E1E"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="#FFFF6D00"
+            android:onClick="back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/belarus"
+            android:textColor="#FFFF6D00"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Buttons -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <Button
+                android:id="@+id/buttonMinistry"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/ministry"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="#FFFFFFFF"
+                style="@style/MangalibButton" />
+
+            <Button
+                android:id="@+id/buttonTeacher"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/teacher"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="#FFFFFFFF"
+                style="@style/MangalibButton" />
+
+            <Button
+                android:id="@+id/buttonStudent"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/student"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="#FFFFFFFF"
+                style="@style/MangalibButton" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
